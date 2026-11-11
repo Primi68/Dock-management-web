@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#12564d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Dock Notes">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="apple-touch-icon.png" type="image/png">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'">
+  <title>Dock Notes</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top"><div class="brand"><span class="mark">D<span>•</span></span><div><strong>Dock Notes</strong><small>현장 기록, 간단하게.</small></div></div><button id="menu" class="icon" aria-label="설정 및 기록 메뉴">☰</button></header>
+  <main id="app"></main><div id="bottom"></div><div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="dialog"><div id="dialog-body"></div></dialog>
+  <input type="file" id="import-file" accept="application/json,.json" hidden>
+<script src="i18n.js"></script><script src="core.js"></script><script src="app.js"></script><script src="pwa.js"></script>
+</body>
+</html>
